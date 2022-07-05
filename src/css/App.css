@@ -1,0 +1,41 @@
+.App{
+  font-family: 'Roboto', serif;
+  display: flex;
+  justify-content: center;
+}
+.Card{
+  position: absolute;
+  top:30%;
+  height: 320px;
+  width: 420px;
+}
+.Head{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+.Fields{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 4%;
+  top: 27%;
+  width: 92%;
+  height: 40%;
+}
+.Form{
+  width: 100%;
+}
+.Button_Box{
+  position: absolute;
+  left: 4%;
+  top: 75%;
+  width: 92%;
+  height: 45px;
+}
+.But{
+  width: 100%;
+  height: 100%;
+}

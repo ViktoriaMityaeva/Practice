@@ -1,0 +1,24 @@
+.App{
+  font-family: 'Roboto', serif;
+  display: flex;
+  justify-content: center;
+ }
+.Buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Cards{
+  position: absolute;
+  top: 10%;
+  height: 85%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.CardMain{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
