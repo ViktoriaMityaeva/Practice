@@ -11,15 +11,22 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { useNavigate } from "react-router-dom";
 import '../css/Page1.css';
 
+
 function Page1() {
     const [auth] = React.useState(true);
+    const login = localStorage.getItem("login");
     const navigate = useNavigate();
+
     return (
         <div className="App">
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Насекомые
+                    </Typography>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{position:"absolute", right:"90px"}}>
+                        Пользователь:
+                        {login}
                     </Typography>
                     {auth && (
                         <div>

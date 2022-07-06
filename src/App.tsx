@@ -8,8 +8,13 @@ import Typography from '@mui/material/Typography';
 import { useNavigate } from "react-router-dom";
 import './css/App.css';
 
+
+
 function App() {
   const navigate = useNavigate();
+  const [value, setValue] = React.useState<string | undefined>();
+  localStorage.setItem("login", value!);
+
   return (
       <div className="App">
         <Card className='Card'>
@@ -18,7 +23,7 @@ function App() {
               Авторизация
             </Typography>
             <div className='Fields'>
-              <TextField id="outlined-basic" label="Логин" variant="outlined" className='Form'/>
+              <TextField id="outlined-basic" label="Логин" variant="outlined" className='Form' value={value} onChange={(e) => setValue(e.currentTarget.value)} />
               <TextField id="outlined-basic" label="Пароль" variant="outlined" className='Form'/>
             </div>
           </CardContent>

@@ -14,12 +14,18 @@ import '../css/Page1.css';
 function Page1() {
     const [auth] = React.useState(true);
     const navigate = useNavigate();
+    const login = localStorage.getItem("login");
+
     return (
         <div className="App">
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Цветы
+                    </Typography>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{position:"absolute", right:"90px"}}>
+                        Пользователь:
+                        {login}
                     </Typography>
                     {auth && (
                         <div>
